@@ -1,16 +1,17 @@
+import React from 'react';
+import MapComponent from './BaseMap/BaseMap';
+// import { MapContainer, TileLayer, useMap, Marker, Popup } from 'react-leaflet';
+// import { MainMap } from './MainMap/MainMap';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <>
+    {/* 1 урок */}
+      {/* <MainMap /> */}
+      {/* 2 урок */}
+      <MapComponent />
+      {/* 3 урок */}
+      
+    </>
   );
 };

@@ -1,0 +1,69 @@
+@import url("~leaflet/dist/leaflet.css");
+
+body,
+.leaflet-container {
+    width: 100%;
+    height: 100%;
+}
+
+#map { height: 100vh; }
+
+
+.zoom-slider {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  
+  .basemaps-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    height: auto;
+    width: auto;
+    border-radius: 4px;
+    background-color: white;
+  }
+  .basemaps-container select {
+    width: 300px;
+    height: 70px;
+  }
+
+  .select-word {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+
+
+  /* @import url("~leaflet/dist/leaflet.css");
+
+
+body,
+#map,
+.leaflet-container {
+    width: 100%;
+    height: 100%;
+}; */
+
+.leaflet-touch .leaflet-bar a {
+    width: 50px;
+    height: 50px;
+    line-height: 30px;
+}
+
+
+.leaflet-touch .leaflet-bar a {
+    width: 50px;
+    height: 50px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leaflet-touch .leaflet-control-zoom-in, .leaflet-touch .leaflet-control-zoom-out {
+    font-size: 40px;
+}
