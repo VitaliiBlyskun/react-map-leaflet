@@ -61,7 +61,7 @@ class CoordInsert extends React.Component {
     return (
       <div className="button-widget">
         <Button type="primary" onClick={this.showModal}>
-          Інформація
+          Open Modal
         </Button>
         <Modal
           title="Basic Modal"

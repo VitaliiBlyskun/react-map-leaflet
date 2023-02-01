@@ -36,9 +36,7 @@ export default class GeojsonLayer extends React.Component {
   }
 
   fetchData(url) {
-    const request = fetch(url);
-
-    request
+    fetch(url)
       .then(response => response.json())
       .then(data => {
         this.setState({
@@ -48,6 +46,7 @@ export default class GeojsonLayer extends React.Component {
         console.error(error);
       });
   }
+  
 
 
   render() {
@@ -65,3 +64,4 @@ export default class GeojsonLayer extends React.Component {
     );
   }
 }
+

@@ -2,10 +2,9 @@ import React from "react";
 import L from 'leaflet';
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import Basemap from './Basemaps';
-// import GeojsonLayer from "./GeoJsonLayer";
+import GeojsonLayer from "./GeoJsonLayer";
 import CoordInsert from './CoordInsert';
-import './MapGeojson.css';
-
+import "./MapGeojson.css"
 
 
 // указываем путь к файлам marker
@@ -74,10 +73,10 @@ class MapComponent extends React.Component {
           </label>
         </div>
         
-        {/* {this.state.geojsonvisible && 
+        {this.state.geojsonvisible && 
           <GeojsonLayer url="geojson.json" />
-        } */}
-
+        }
+    
         <CoordInsert onllzChange={this.onCoordInsertChange} />
 
         <Marker position={center}>
@@ -93,3 +92,5 @@ class MapComponent extends React.Component {
 };
 
 export default MapComponent;
+
+
